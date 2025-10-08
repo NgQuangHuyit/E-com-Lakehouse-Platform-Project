@@ -151,15 +151,15 @@ services:
     networks:
       - data_network
 
-  metabase:
-    image: metabase/metabase:latest
-    container_name: "metabase"
-    ports:
-      - "3000:3000"
-    env_file:
-      - .env
-    networks:
-      - data_network
+  # metabase:
+  #   image: metabase/metabase:latest
+  #   container_name: "metabase"
+  #   ports:
+  #     - "3000:3000"
+  #   env_file:
+  #     - .env
+  #   networks:
+  #     - data_network
 
   # airflow-webserver: 
   #   build: ./airflow
